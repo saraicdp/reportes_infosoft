@@ -1,0 +1,147 @@
+body{
+      background-image: url(img/img5.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 0,0s; 
+      background-attachment: fixed;
+    }
+
+
+.nav{
+  
+  background-color: #34495E;
+  opacity: 0.9;
+  color: #E5E7E9;
+  list-style: none;
+  font-family: 'Arial', serif;
+  font-size: 20px;
+  text-align: center;
+  padding: 15px 0 15px 0;
+  margin-top: 10px;
+}
+
+.nav > li {
+  display: inline-block;
+  padding: 0 20px 0 20px;
+}
+
+.nav > li > a {
+  text-decoration:none;
+  color: #ffffff;
+
+}
+.nav > li > a:hover {
+  color: #99A3A4;
+
+}
+
+.nav > li > ul {
+  display: none;
+}
+
+h1{
+  font-family: 'Arial', serif;
+  font-size: 40px;
+  text-align: center;
+  color: #F8F9F9;
+}
+
+.ven {
+  position:relative;
+  margin-left: 10px;  
+  background-color: #E5E8E8;
+  opacity: 0.8;
+  width: 400px;
+  height: 200px;
+  padding: 5px 0 5px 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  -webkit-box-shadow: 2px 2px 5px #000;
+  -moz-box-shadow: 2px 2px 5px #000;
+}
+
+.ven > h1 {
+  margin:5px 5px 5px 5px;
+  font-size: 30px;
+  font-family: 'Arial', serif;
+  color: #000000;
+  text-align: center;
+}
+
+.ven > form {
+text-align: left;
+margin-left: 40px;
+margin-top: 40px;
+
+}
+
+.desc{
+  position:relative;
+  top:-210px;
+  bottom:;
+  right:;
+  left:410px;
+  margin-left: 10px;  
+  background-color: #E5E8E8;
+  opacity: 0.8;
+  width: 400px;
+  height: 200px;
+  padding: 5px 0 5px 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  -webkit-box-shadow: 2px 2px 5px #000;
+  -moz-box-shadow: 2px 2px 5px #000;
+}
+
+.desc > h1 {
+  margin:5px 5px 5px 5px;
+  font-size: 30px;
+  font-family: 'Arial', serif;
+  color: #000000;
+  text-align: center;
+}
+
+.desc > form {
+text-align: left;
+margin-left: 40px;
+margin-top: 40px;
+
+}
+
+.descventas{
+  position:relative;
+  top:-420px;
+  bottom:;
+  right:;
+  left:820px;
+  margin-left: 10px;  
+  background-color: #E5E8E8;
+  opacity: 0.8;
+  width: 400px;
+  height: 200px;
+  padding: 5px 0 5px 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  -webkit-box-shadow: 2px 2px 5px #000;
+  -moz-box-shadow: 2px 2px 5px #000;
+}
+
+.descventas > h1 {
+  margin:5px 5px 5px 5px;
+  font-size: 30px;
+  font-family: 'Arial', serif;
+  color: #000000;
+  text-align: center;
+}
+
+.descventas > form {
+text-align: left;
+margin-left: 40px;
+margin-top: 40px;
+

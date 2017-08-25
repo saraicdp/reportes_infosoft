@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<link rel="shortcut icon" href="home.ico">
+<head>
+ 	 <title>Ventas</title>
+   	 <link rel="stylesheet" type="text/css" href="style1.css">
+  </head>
+<header><h1>Ventas</h1></header>
+	<body> 
+	<div class="contenedor">
+ 		<div>
+    		<ul  class="nav">
+             <li><a href="index.html">Home</a></li>
+             <li><a href="compras.html">Compras</a></li>
+             <li><a href="ventas.html">Ventas</a></li>    
+             <li><a href="inventario.html">Inventario</a></li>  
+    		</ul>
+  	</div>
+    <div class="box1">
+        <h1>Ventas por Cliente</h1>
+          <form action="vxc.php" method="POST" >
+             Cedula:<input type="text" name="ci" ><br></br>
+             Desde:<input type="date" name="fdesde"><br></br>
+             Hasta: <input type="date" name="fhasta"><br></br>
+                    <input id="enviar" type="submit" name="Buscar" value="Buscar">
+          </form>
+    </div >
+    <div class="box2">
+          <h1>Devolucion por Clientes</h1>
+          <form action="dxp.php" method="POST" >
+             Cedula:<input type="text" name="ci" ><br></br>
+           <input id="enviar" type="submit" name="Buscar" value="Buscar">
+          </form>
+       </div>
+
+       <div class="box3">
+          <h1>Historico por Cliente</h1>
+          <form action="his_x_cli.php" method="POST" >
+             Cedula:<input type="text" name="ci" ><br></br>
+           <input id="enviar" type="submit" name="Buscar" value="Buscar">
+          </form>
+       </div>
+        <div class="box4">
+          <h1>Estadisticas</h1>
+          <form action="estadisticas.php" method="POST" >
+              Fecha: <input type="date" name="fhasta" ><br></br>
+           <input id="enviar" type="submit" name="Buscar" value="Buscar">
+          </form>
+       </div>
+          <div class="box5">
+          <h1>Salidas De Inventario</h1>
+          <form action="salidas.php" method="POST" >
+           Fecha: <input type="date" name="fhasta" ><br></br>
+           <input id="enviar" type="submit" name="Buscar" value="Buscar">
+          </form>
+       </div>
+  </div>
+</body>
+</html>
+
+  
+
+
+
+

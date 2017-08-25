@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<link rel="shortcut icon" href="home.ico">
+<head>
+  <title>Infosoft</title>
+<link rel="stylesheet" type="text/css" href="style_1.css">
+<script src="http://code.jquery.com/jquery-lates.js"></script>
+<script src="main.js"></script>
+</head>
+<header><h1>Inventario</h1></header>
+    <body> 
+      <div class="nav">
+            <ul>            
+               <li><a href="index.html">Home</a></li>
+               <li><a href="compras.html">Compras</a></li>
+               <li><a href="ventas.html">Ventas</a></li>   
+               <li><a href="inventario.html">Inventario</a></li>    
+           </ul>
+      </div>
+      <div class="formulario">
+         <form action="inv_x_gru_ivo.php" method="POST">
+           Desde: <input type="date" name="fdesde" required><br>
+           Hasta: <input type="date" name="fhasta" required><br>
+            <select name="grupos">
+               <option value="#">  </option>
+               <option value="564654">Congelador</option>
+               <option value="ALI">Alimentos</option>
+               <option value="AMP">Ampollas</option>
+               <option value="ANT">Antibioticos</option>
+               <option value="DET">Detallados</option>
+               <option value="ENV">Envases</option>
+               <option value="EST">Estupefactivo</option>
+               <option value="FOR">Formulas Magistrales</option>
+               <option value="GOT">Gotas</option>
+               <option value="HEL">Helados</option>
+               <option value="INS">Insulinas</option>
+               <option value="JAR">Jarabes</option>
+               <option value="LECH">Leche</option>
+               <option value="MAP">Materia Prima</option>
+               <option value="MIS">Miscelanea</option>
+               <option value="MMQ">Material Medico Q.</option>
+               <option value="NAT">Naturales</option>
+               <option value="NEV">Nevera</option>
+               <option value="POM">Pomadas y Cremas</option>
+               <option value="REF">Refresco</option>
+               <option value="SIC">Psicotropicos y Estupefactivos</option>
+               <option value="SUERO">Soluciones</option>
+               <option value="SUNS">Natural Sunshine</option>
+               <option value="TAB" selected>Tabletas</option>
+               <option value="TAR">Tarjetas</option>
+               <option value="TARJ">Tarjetas Telefonicas</option>
+               <option value="VARIOS">Linea de Productos Varios</option>
+            </select>
+          <button>Enviar</button>
+      </form>
+      </div>
+    </body>
+</html>
+
+
+

@@ -1,0 +1,57 @@
+body{
+      background-image: url(img/img5.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 0,0s; 
+      background-attachment: fixed;
+    }
+
+h1 {
+  font-family: 'Arial', serif;
+  font-size: 40px;
+  text-align: center;
+  color: #F8F9F9;
+}
+
+.nav{
+  width: 100%;
+}
+.nav {
+  background-color: #5D6D7E;
+  font-family: 'arial', serif;
+  font-size: 14px;
+  margin: auto;
+  text-align: center;
+
+}
+.nav > ul{
+  list-style: none;
+  position: relative;
+}
+
+.nav >ul >li{
+  display: inline-block;
+}
+
+.nav > ul > li > a{
+  color: #fff;
+  text-decoration: none;  
+  display: block;
+  padding: 20px
+}
+
+.nav li ul{
+  position:absolute;
+  display: none;
+  text-decoration: none;
+  list-style: none;
+
+}
+
+.nav li:hover ul{
+  display: block;
+}
+
+.formulario{
+  background-color: #000;
+}

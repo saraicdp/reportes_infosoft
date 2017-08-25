@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<link rel="shortcut icon" href="home.ico">
+<head>
+  <title>Infosoft</title>
+<link rel="stylesheet" type="text/css" href="style_1.css">
+<script src="http://code.jquery.com/jquery-lates.js"></script>
+<script src="main.js"></script>
+</head>
+<header><h1>Reportes Infosoft</h1></header>
+    <body> 
+       <div class="contenedor">
+          <div class="nav">
+            <ul>            
+             <li><a href="index.html">Home</a></li>
+             <li><a href="compras.html">Compras</a></li>
+             <li><a href="ventas.html">Ventas</a></li>   
+             <li><a href="inventario.html">Inventario</a></li>    
+            </ul>
+         </div>
+      </div>
+      <form action="inv_x_gru.php" method="POST">
+          <input type="date" name="fdesde">
+
+          <select name="grupos">
+            <option value="tab">Tabletas</option>
+            <option value="ant">Antibioticos</option>
+          </select>
+          <button>Enviar</button>
+      </form>
+
+
+    </body>
+</html>
+
+  
+
+
+
+
