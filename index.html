@@ -4,32 +4,118 @@
 <head>
   <title>Infosoft</title>
 <link rel="stylesheet" type="text/css" href="style_1.css">
-<script src="http://code.jquery.com/jquery-lates.js"></script>
-<script src="main.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <header><h1>Reportes Infosoft</h1></header>
     <body> 
        <div class="contenedor">
           <div class="nav">
-            <ul>            
-             <li><a href="index.html">Home</a></li>
-             <li><a href="compras.html">Compras</a></li>
-             <li><a href="ventas.html">Ventas</a></li>   
-             <li><a href="inventario.html">Inventario</a></li>    
+            <ul id="navigator">            
+             <li><a href="#home">Home</a></li>
+             <li><a href="#compras">Compras</a></li>
+             <li><a href="#ventas">Ventas</a></li>   
+             <li><a href="#inventario">Inventario</a></li>    
             </ul>
          </div>
       </div>
-      <form action="inv_x_gru.php" method="POST">
-          <input type="date" name="fdesde">
-
+      <div id="root">
+        <section id="home" class="box-content active">
+          <form action="inv_x_gru.php" method="POST">
+              <input type="date" name="fdesde" />
+              <select name="grupos">
+                <option value="tab">Tabletas</option>
+                <option value="ant">Antibioticos</option>
+              </select>
+              <button>Enviar</button>
+          </form>
+        </section>
+        <section id="compras" class="box-content">
+          <h2>Libro de Compra</h2>
+          <form action="cpa.php" method="POST">
+            <label for="fdesde">Desde: <input type="date" name="fdesde"></label>
+            <label for="fhasta">Hasta: <input type="date" name="fhasta" ></label>
+              <input id="enviar" type="submit" name="Buscar" value="Buscar" />
+          </form>
+        </section>
+        <section id="ventas" class="box-content">
+          <div class="box1">
+            <h3>Ventas por Cliente</h3>
+            <form action="vxc.php" method="POST">
+              <label for="ci">Cedula:<input type="text" name="ci" ></label>
+              <label for="fdesde">Desde:<input type="date" name="fdesde"></label>
+              <label for="fhasta">Hasta: <input type="date" name="fhasta"></label>
+              <input id="enviar" type="submit" name="Buscar" value="Buscar" />
+            </form>
+          </div>
+          <div class="box2">
+            <h3>Devolucion por Clientes</h3>
+            <form action="dxp.php" method="POST">
+              <label for="ci">Cedula:<input type="text" name="ci" ></label>
+              <input id="enviar" type="submit" name="Buscar" value="Buscar" />
+            </form>
+          </div>
+          <div class="box3">
+            <h3>Historico por Cliente</h3>
+            <form action="his_x_cli.php" method="POST">
+              <label for="ci">Cedula:<input type="text" name="ci" ></label>
+              <input id="enviar" type="submit" name="Buscar" value="Buscar">
+            </form>
+           </div>
+            <div class="box4">
+              <h3>Estadisticas</h3>
+              <form action="estadisticas.php" method="POST" >
+                  <label for="fhasta">Fecha: <input type="date" name="fhasta" ></label>
+               <input id="enviar" type="submit" name="Buscar" value="Buscar">
+              </form>
+           </div>
+              <div class="box5">
+              <h3>Salidas De Inventario</h3>
+              <form action="salidas.php" method="POST" >
+               <label for="fhasta">Fecha: <input type="date" name="fhasta" ></label>
+               <input id="enviar" type="submit" name="Buscar" value="Buscar">
+              </form>
+           </div>
+          </div>
+       </section>
+       <section id="inventario" class="box-content">
+         <form action="inv_x_gru_ivo.php" method="POST">
+          <label for="fdesde">Desde: <input type="date" name="fdesde" required></label>
+          <label for="fhasta">Hasta: <input type="date" name="fhasta" required></label>
           <select name="grupos">
-            <option value="tab">Tabletas</option>
-            <option value="ant">Antibioticos</option>
+            <option value="ALL">Todos</option>
+            <option value="564654">Congelador</option>
+            <option value="ALI">Alimentos</option>
+            <option value="AMP">Ampollas</option>
+            <option value="ANT">Antibioticos</option>
+            <option value="DET">Detallados</option>
+            <option value="ENV">Envases</option>
+            <option value="EST">Estupefactivo</option>
+            <option value="FOR">Formulas Magistrales</option>
+            <option value="GOT">Gotas</option>
+            <option value="HEL">Helados</option>
+            <option value="INS">Insulinas</option>
+            <option value="JAR">Jarabes</option>
+            <option value="LECH">Leche</option>
+            <option value="MAP">Materia Prima</option>
+            <option value="MIS">Miscelanea</option>
+            <option value="MMQ">Material Medico Q.</option>
+            <option value="NAT">Naturales</option>
+            <option value="NEV">Nevera</option>
+            <option value="POM">Pomadas y Cremas</option>
+            <option value="REF">Refresco</option>
+            <option value="SIC">Psicotropicos y Estupefactivos</option>
+            <option value="SUERO">Soluciones</option>
+            <option value="SUNS">Natural Sunshine</option>
+            <option value="TAB" selected>Tabletas</option>
+            <option value="TAR">Tarjetas</option>
+            <option value="TARJ">Tarjetas Telefonicas</option>
+            <option value="VARIOS">Linea de Productos Varios</option>
           </select>
           <button>Enviar</button>
-      </form>
-
-
+        </form>
+       </section>
+      </div>
+      <script src="main.js"></script>
     </body>
 </html>
 
