@@ -4,9 +4,7 @@ $(document).ready(function() {
 		var barra = $(window).scrollTop();
 		var posicion = barra * 0.100;
 
-		$('body').css({
-			'background-position': '0 -' + posicion + 'px'
-		});
+		$('body').css({ 'background-position': '0 -' + posicion + 'px' });
 
 	});
 
@@ -18,7 +16,9 @@ $(document).ready(function() {
 				var name = $(this).attr('id');
 				if(classes.includes('active')) {
 					if(target !== name) {
-						$(this).attr('class', classes.filter(function(c) { return c !== 'active'}).join(' '));
+						$(this).attr('class', classes
+							     .filter(function(c) { return c !== 'active'})
+							     .join(' '));
 					}
 				} else {
 					if(target === name) {
